@@ -14,6 +14,7 @@ So of course before we can even begin this project we have to undertand WHAT whe
   * COMPUTER PARTS
       *(most taken from Ben Eater)*
       * 2004 Intel Xeon CPU
+      *(Photo 1-1)*
       * BreadBoards (830 point)
       * 22-Guage Wire
       * AT28C256-15PU EEPROM
@@ -28,4 +29,4 @@ Now that we have arough idea of all the parts that need to come together for thi
 # Understanding the Xeon
 first We need to undertsand how this chip works and what it does so heres  a very breif ecplination. In 2004 intel neede a new cpu to put into their servers that was aboe to do lots of background computation but wasnt heavily involved in GUI or graphic intenseive prcessing. This chip also neede to be highly scalabale,quick and reliable. They created NetBurst and Hyper-threading, NetBurst is a genereal term used to describe a lor of systems under one name, it gives the proccesor an L2 cache to be used for multithreading pof up to three proccesies at once, basic mathmatics can retuirte in one half of a clock cycle,with that ALU's run at double the proccesor frequency. We also have Hyper-Threading which works uder the NetBurst name. Hyper-threading allows us to run multiple task at once across the proccesor, specifficly up to three proccessies at once which when coupled with the L2 cache sub-system means we can have constant, very fast , stable, output's with just a single processor. Now thats only the surface of what this proccesor can do. 
 
-All proccesors are about the same everything from 8-bit to x86, they all have a set of pins that when are sent a very speciffic electrical voltage will trigger some gate to open/close inside the proccsor which will than outpt somthing. The only problem is that on a modern proccesor like the XEON we have 604 pins not just the 40 that are on the 8086. This means we can just buy it in a DIP package like the 8086 we have to get a PGA(pins are ON the chip)/LGA(pins ON socket) package of the chip with a socket to breakout from.  
+All proccesors are about the same everything from 8-bit to x86, they all have a set of pins that when are sent a very speciffic electrical voltage will trigger some gate to open/close inside the proccsor which will than outpt somthing. The only problem is that on a modern proccesor like the XEON we have 604 pins not just the 40 that are on the 8086. This means there A LOT morwe instructions that thgis chip can run but aksi A LOT more that nees to happen for those instructions to be carried out properlly. 
