@@ -31,7 +31,25 @@ Now that we have arough idea of all the parts that need to come together for thi
 
 first We need to undertsand how this chip works and what it does. In 2004 intel needed a new cpu to put into their servers that was able to do lots of background computation but wasnt heavily involved in GUI or graphic intenseive prcessing. This chip also needed to be highly scalabale,quick and reliable. They created NetBurst and Hyper-threading, NetBurst is a genereal term used to describe a lor of systems under one name, it gives the proccesor an L2 cache to be used for multithreading pof up to three proccesies at once, basic mathmatics can retuirte in one half of a clock cycle,with that ALU's run at double the proccesor frequency. We also have Hyper-Threading which works uder the NetBurst name. Hyper-threading allows us to run multiple task at once across the proccesor, specifficly up to three proccessies at once which when coupled with the L2 cache sub-system means we can have constant, very fast , stable, output's with just a single processor. Now thats only the surface of what this proccesor can do.
 
-All proccesors are about the same everything from 8-bit to 64-bit, they all have a set of pins that when are sent a very speciffic electrical voltage will trigger some gate to open/close inside the proccsor which will than outpt something. The only problem is that on a modern proccesor like the XEON we have 604 pins not just the 40 that are on the 8086. This means there are A LOT more instructions that this chip can run but also A LOT more that nees to happen for those instructions to be carried out properlly. 
+All proccesors are about the same everything from 8-bit to 64-bit, they all have a set of pins that when are sent a very speciffic electrical voltage will trigger some gate to open/close inside the proccsor which will than outpt something. The only problem is that on a modern proccesor like the XEON we have 604 pins not just the 40 that are on the 8086. This means there are A LOT more instructions that this chip can run but also A LOT more that nees to happen for those instructions to be carried out properlly.
+
+The best part of a 64-bit architecture is that you can mimic everythign below it, Intel had this idea and impleimented MODES. MODES allow for a devolper to trigger a change in mode at any time (for most modes). The modes look like this.
+
+## MODES
+  * IA-32
+    * Protected *(DEFUALT)*
+      * This is the defualt mode and allows youn to use all the neccesary standard functions of the chip  
+    * Real-Address *(8086 Emulation)*
+      * This emultaes an 8086 proccesor so you really have two diffrent proccesors in this chip
+    * System-Mangment-Mode *(ADMIN)*
+      * WHen in SMM you have total control over the entire chip and are allowed to alter states that usaully are protected
+### SUB-MODES
+  * IA-32e (64-bit)
+    * Compatabillity Mode *(For Legacy Software)*
+        * a simple mode that allows for cross bit legacy software to run, it acts like 8086 mode but will not allow Virtual(emulated)-8086 software to run on it. Supports 16 and 32-bit software
+    * 64-Bit Mode
+      * The actuall 64-bit mode that runs on top of the IA-32 system. It is a full 64-bit address space
+
 
 # How are we going to put this all together? 
 Much like other HomeBew style computers this whole project will take place on 830 pin breadboards. These allow us to simply connect all of our componets without having to solder and can easily be re-arrranged. To best model what this is goiong to look like ive re-created the project in a CAD-like software for computer logic. 
