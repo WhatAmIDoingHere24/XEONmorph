@@ -27,7 +27,7 @@ So of course before we can even begin this project we have to undertand WHAT whe
 Now that we have arough idea of all the parts that need to come together for this project lets start taking some notes. Now dont worry im not going to explain eveysingle piece of this data sheet so ill just give a breif syummary of the most important parts and of course give a refrecne to where theyare in the datasheet just in case you really DO want to read it. 
 
 # Understanding the Xeon
-![Our XEON chip](https://github.com/user-attachments/assets/a920a8f7-f9ce-4b88-86d6-4f47718f16c2)
+*(image 1-1)*
 
 first We need to undertsand how this chip works and what it does. In 2004 intel needed a new cpu to put into their servers that was able to do lots of background computation but wasnt heavily involved in GUI or graphic intenseive prcessing. This chip also needed to be highly scalabale,quick and reliable. They created NetBurst and Hyper-threading, NetBurst is a genereal term used to describe a lor of systems under one name, it gives the proccesor an L2 cache to be used for multithreading pof up to three proccesies at once, basic mathmatics can retuirte in one half of a clock cycle,with that ALU's run at double the proccesor frequency. We also have Hyper-Threading which works uder the NetBurst name. Hyper-threading allows us to run multiple task at once across the proccesor, specifficly up to three proccessies at once which when coupled with the L2 cache sub-system means we can have constant, very fast , stable, output's with just a single processor. Now thats only the surface of what this proccesor can do.
 
