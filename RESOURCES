@@ -1,4 +1,9 @@
 This file contains all the documents ive used to build this project
 Xeon Architecture: https://www.google.com/url?q=https://cdrdv2.intel.com/v1/dl/getContent/671200&sa=D&source=docs&ust=1735759399748995&usg=AOvVaw101NCna2DM7e3CuP98Sslh
 Xeon Specifications https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/2nd-gen-xeon-scalable-datasheet-vol-1.pdf
-Intel Xeon *(???)* Pin Grid Array: https://www.intel.la/content/dam/www/public/us/en/documents/design-guides/xeon-with-512-kb-l2-cachel-e7500-chipset-guide.pdf
+Intel Xeon Pin Grid Array: https://www.intel.la/content/dam/www/public/us/en/documents/design-guides/xeon-with-512-kb-l2-cachel-e7500-chipset-guide.pdf
+Intel Xeon Nocona Specs: https://web.archive.org/web/20110603084841/http://ark.intel.com/Product.aspx?id=28016
+Xeon Wiki: https://en.wikipedia.org/wiki/Xeon#Nocona_and_Irwindale
+XEON spec sheet: https://en.wikipedia.org/wiki/List_of_Intel_Xeon_processors_(NetBurst-based)#"Nocona"_(90_nm) *(SL7PF (E0) Xeon 3.2)*
+Xeon Abillitys: https://web.archive.org/web/20110603084841/http://ark.intel.com/Product.aspx?id=28016
+
